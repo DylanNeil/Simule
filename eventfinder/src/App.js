@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import { makeStyles } from '@material-ui/core/styles';
+import Eventcard from './eventcard.js';
+
 
 function App() {
   return (
@@ -7,7 +10,7 @@ function App() {
       <header className="App-body">
 
 
-        Event Finder
+        <Eventcard />
 
       </header>
     </div>

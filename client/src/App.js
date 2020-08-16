@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import Button from "@material-ui/core/Button";
@@ -33,7 +33,6 @@ state = {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
         // Render the newly fetched data inside of this.state.data
@@ -42,7 +41,5 @@ state = {
     );
   }
 }
-
-export default App;
 
 export default App;

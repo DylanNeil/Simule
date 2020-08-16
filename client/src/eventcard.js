@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function EventCard() {
+function EventCard() {
   const classes = useStyles();
 
   return (
@@ -58,3 +58,5 @@ export default function EventCard() {
     </Card>
   );
 }
+
+export default EventCard;

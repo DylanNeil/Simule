@@ -7,20 +7,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Eventcard from './eventcard.js';
 
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-body">
-//
-//
-//         <Eventcard />
-//
-//       </header>
-//     </div>
-//   );
-// }
-
-
 class App extends Component {
 state = {
     data: null

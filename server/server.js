@@ -7,7 +7,7 @@ const events = [
 
 ];
 
-let idCounter = 1;
+let idCounter = 0;
 
 app.use(bodyParser.json());
 
@@ -22,23 +22,20 @@ app.post('/events', function test2(req,res) {
   res.status(201).send({ eventObject });
 });
 
+app.delete('/events/:id',(req, res) => {
+  const requestId = events.find((event) => event.id === req.params.id);
+  res.status(202).send(requestId);
+    return;
+}); 
+
 // create a GET route
 app.get('/events/:id', (req, res) => {
-  for (let i = 0; i < events.length; i += 1) {
-    const event = events[i];
-    if (events[i].id === req.params.id) {
-      res.status(200).send(event);
+    const event = events.find((event) => event.id === req.params.id);
+    res.status(200).send(event);
       return;
-    }
-  }
-
-  const event = events.find((event) => event.id === req.params.id);
-  res.status(200).send(event);
-
-  // What if the event is not in the list?
 });
 
-// create a GET route
+
 app.get('/events', (req, res) => {
   res.status(200).send(events);
 });

@@ -7,10 +7,10 @@ export default createMuiTheme({
     MuiButton: {
       root: {
         fontWeight: "bold",
-        backgroundColor: "red",
+        backgroundColor: "#379683",
         margin: "10px",
         "&:hover": {
-          backgroundColor: "green"
+          backgroundColor: "#5CDB95"
         }
       }
     }

@@ -5,8 +5,8 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Button from "./simpleButton";
 
 const useStyles = makeStyles({
   root: {
@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     textAlign: 'left',
     transition: '0.3s',
     '&:hover':{
-      transform: 'scale(1.02)',
+      transform: 'scale(1.005)',
       transition: '0.3s'
     }
   },

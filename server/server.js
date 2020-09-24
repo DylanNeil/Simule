@@ -36,6 +36,9 @@ app.delete('/events/:id',(req, res) => {
        if(eventsID == currentID){
          events.splice([i],1);
        }
+       else{
+        res.status(404).send();        
+       }
   }
   res.status(204).send();
   return;

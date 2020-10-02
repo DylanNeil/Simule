@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import { createMuiTheme } from "@material-ui/core/styles";
 
 export default createMuiTheme({
@@ -10,9 +10,9 @@ export default createMuiTheme({
         backgroundColor: "#379683",
         margin: "10px",
         "&:hover": {
-          backgroundColor: "#5CDB95"
-        }
-      }
-    }
-  }
+          backgroundColor: "#5CDB95",
+        },
+      },
+    },
+  },
 });

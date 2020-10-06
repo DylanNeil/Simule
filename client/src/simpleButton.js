@@ -5,9 +5,9 @@ export default styled(Button)`
   && {
     color: white;
     background-color: blue;
-    padding:.3em;
-    &&:hover{
-      background-color:teal;
+    padding: 0.3em;
+    &&:hover {
+      background-color: teal;
     }
   }
 `;

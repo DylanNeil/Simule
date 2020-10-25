@@ -1,7 +1,15 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const port = process.env.PORT || 5000;
+
+
+const pg = require('knex')({
+  client: 'pg',
+  connection: process.env.POSTGRES_CONNECTION,
+  searchPath: ['knex', 'public'],
+});
 
 const events = [
   { id: 0, name: "Test Event" },

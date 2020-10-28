@@ -6,7 +6,7 @@ import theme from "./theme";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
-import Displayevents from "./components/eventcard.js";
+import Displayevents from "./components/displayevents";
 
 class App extends Component {
   render() {
@@ -17,28 +17,28 @@ class App extends Component {
             <h1 className="App-title">Simule</h1>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={3}>
-                <Eventcard
+                <Displayevents
                   title="Futurama Trivia Night"
                   date="01/01/3021"
                   location="A Bar Somewhere"
                 />
               </Grid>
               <Grid item xs={12} sm={3}>
-                <Eventcard
+                <Displayevents
                   title="Gypsy Jazz Concert"
                   date="03/21/2022"
                   location="Paris"
                 />
               </Grid>
               <Grid item xs={12} sm={3}>
-                <Eventcard
+                <Displayevents
                   title="Futball!"
                   date="14/06/2021"
                   location="Barcelona"
                 />
               </Grid>
               <Grid item xs={12} sm={3}>
-                <Eventcard
+                <Displayevents
                   title="Astronomy Night"
                   date="12/03/2020"
                   location="A Mountain Somewhere"

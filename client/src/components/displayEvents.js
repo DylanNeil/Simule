@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     },
   });
   
-  function EventCard(props) {
+  function Displayevents(props) {
     const classes = useStyles();
   
     return (
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
               {props.date}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              {props.text}
+              {props.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               {props.location}
@@ -46,5 +46,5 @@ const useStyles = makeStyles({
     );
   }
   
-  export default DisplayEvents;
+  export default Displayevents;
   

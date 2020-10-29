@@ -6,6 +6,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
+import location from "./img/location.svg";
 
 
 const useStyles = makeStyles({
@@ -38,7 +39,7 @@ const useStyles = makeStyles({
               {props.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              {props.location}
+           <img src={location} /> {props.location}
             </Typography>
           </CardContent>
         </CardActionArea>

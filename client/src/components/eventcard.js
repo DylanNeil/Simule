@@ -45,8 +45,7 @@ function EventCard(props) {
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {props.text}
-            {/* Alright, let's mafia things up a bit. Joey, burn down the ship. Clamps, burn down the crew.
-               Anyone who laughs is a communist! Isn't it true that you have been paid for your testimony? */}
+
           </Typography>
         </CardContent>
       </CardActionArea>

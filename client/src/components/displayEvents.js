@@ -11,7 +11,7 @@ import location from "./img/location.svg";
 
 const useStyles = makeStyles({
     root: {
-      maxWidth: 345,
+      min-width: 400,
       textAlign: "left",
       transition: "0.3s",
       lineclamp: "3",
@@ -22,6 +22,7 @@ const useStyles = makeStyles({
     },
     media: {
       height: 140,
+      width:100,
     },
   });
   

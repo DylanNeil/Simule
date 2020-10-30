@@ -13,9 +13,9 @@ class App extends Component {
     return (
       <div className="App">
         <Container maxWidth="lg">
-          <header className="App-header">
+          <header className="App-body">
             <h1 className="App-title">Simule</h1>
-            <Grid container spacing={3}>
+            <Grid container spacing={3} className="Events-body">
               <Grid item xs={12} sm={3}>
                 <Displayevents
                   title="Futurama Trivia Night"

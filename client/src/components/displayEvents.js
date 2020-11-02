@@ -33,10 +33,10 @@ const useStyles = makeStyles({
       <Card className={classes.root}>
         <CardActionArea>
           <CardContent>
-            <Typography variant="subtitle1" component="h4">
+            <Typography variant="subtitle1" color="textSecondary" component="h4">
               {props.date}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography variant="body1" color="textPrimary" component="h1">
               {props.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
